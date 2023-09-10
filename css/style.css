@@ -27,12 +27,18 @@
 }
 .text-light-gray {
   color: #727272;
+  width: 542px;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
 /* Header Styles */
 header {
   background: rgba(255, 144, 14, 0.1);
-  padding: 20px 240px;
+  padding: 20px 100px;
 }
 nav {
   display: flex;
@@ -77,7 +83,7 @@ nav {
 }
 .banner-description {
   font-size: 1rem;
-
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -125,6 +131,109 @@ main {
   margin-bottom: 10px;
 }
 
+/* feature css start */
+
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.feature-paragraph {
+  width: 550px;
+}
+.feature-content h2 {
+  border-left: 5px solid #ff900e;
+  font-size: 2rem;
+  padding-left: 10px;
+}
+.feature-image {
+  position: relative;
+}
+.feature-image img {
+  width: 700px;
+}
+.feature-card {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.feature-card p {
+  width: 510px;
+}
+.feature-bottom {
+  padding: 20px;
+  background: #ff900e;
+  text-align: center;
+  color: #ffff;
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+}
+.feature-bottom h1 {
+  font-size: 3.6rem;
+}
+.feature-bottom h5 {
+  font-size: 1.5rem;
+}
+
+/* feature css end */
+
+/* fact css start */
+
+.fact-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.fact-card-container .card {
+  padding: 40px 30px;
+  border: 1px dotted red;
+  text-align: center;
+}
+.fact-card-container .card-stats {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.fact-card-container .card-title {
+  color: #727272;
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+/* fact css end */
+
+/* Sponsor css start */
+.sponsor {
+  text-align: center;
+}
+.sponsor-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+.sponsor-img-container img {
+  width: 155px;
+}
+.sponsor-paragraph {
+  margin: 0 auto;
+}
+/* Sponsor css end */
+
+/* footer  css start */
+
+footer {
+  background-color: #fff4e7;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* footer  css end */
+
 /* Responsive media queries */
 
 /* Mobile Devices */
@@ -136,21 +245,31 @@ main {
     width: auto;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .fact-card-container,
+  .sponsor-img-container,
+  .sponsor-img-container {
     flex-direction: column;
+  }
+  .fact-card-container {
+    gap: 20px;
   }
 
   .teams-img-container {
     grid-template-columns: 1fr;
   }
-  .teams-content {
+  .teams-content,
+  .fact-card-container {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
   }
+  .sponsor-img-container {
+    gap: 20px;
+  }
 }
 
-/* Tablet Devices */
+/* Tablet Devices & medium devices */
 
 @media screen and (min-width: 577px) and (max-width: 960px) {
   header {
